@@ -7,10 +7,18 @@
 #
 # File name: logistic.py
 #
-'''    ** Logistic Regression **
+'''
+        ** Logistic Regression **
 
-This is a simple logistic regression example. Sigmoid function is applied. Cross entropy
-has been applied too. The gradient descent method is applied to train the weight theta.
+This is a logistic regression classifier example.
+
+Sigmoid function is applied. 
+
+Cross entropy has been choosen as Cost Function. 
+
+The data are rescaled before training.
+
+The gradient descent method is applied to train the weight theta.
 
 '''
 
