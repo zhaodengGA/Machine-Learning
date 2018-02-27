@@ -1,4 +1,4 @@
-##             ** MNIST Single Layer Neural Network **
+  ##       MNIST Single Layer Neural Network 
 
 This code is a rewritten version of Google Developers Codelabs for learning purposes. This code shows how to build 
 and train a single layer neural network that recognises handwritten digits of MNIST dataset which has a collection of
