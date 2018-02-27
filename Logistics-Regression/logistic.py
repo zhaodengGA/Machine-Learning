@@ -12,9 +12,9 @@
 
 This is a logistic regression classifier example.
 
-Sigmoid function is applied. 
+Sigmoid function is applied as activation function. 
 
-Cross entropy has been choosen as Cost Function. 
+Cross entropy has been chosen as Cost Function. 
 
 The data are rescaled before training.
 
