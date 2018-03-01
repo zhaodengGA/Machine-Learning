@@ -8,27 +8,38 @@
 # File name: mnist_four_layers_NN.py
 
 '''
-            ** MNIST Single Layer Neural Network **
+            ** MNIST four Layers Neural Network **
 
-This code is a rewritten version of Google Developers Codelabs for learning purposes. This code shows how to build
-and train a single layer neural network that recognises handwritten digits of MNIST dataset which has a collection of
-60,000 labeled digits. MNIST dataset could be downloaded at: http://yann.lecun.com/exdb/mnist/
+This code is a rewritten version of MNIST of Google Developers Codelabs for learning purposes. Here it shows how to build
+and train a four layers neural network that recognises handwritten digits of MNIST dataset which has a collection of 60,000
+labeled digits. MNIST dataset could be downloaded at: http://yann.lecun.com/exdb/mnist/
+
+* This is a four layers Neural Network.
+  Sigmoid function is applied to the first three layers as activation function.
+  Softmax function is applied to the last layer as activation function.
 
 * Tensorflow is applied to implement the algorithm.
 
-* Softmax function is applied as activation function. 
+* The data are loaded with the official tensorflow MNIST loader .
 
 * Cross entropy has been chosen as Cost Function. 
 
-* The data are loaded with the official tensorflow MNIST loader .
-
-* The gradient descent method is applied to train the weight theta.
+* The Adam optimizer is chosen to train the weights {Wi} and the biases {bi}.
 
 * The model is trained each time with 100 images in the minibatch.
 
 * Test the model once with the 10,000 images in the test dataset after every 100 times of training.
 
-The final test accuracy of this model reaches to 92%.
+
+# The structure of the neural network is:
+----------------------------------------------------------------------------------------------------
+layer 1:    X1[n_batch, 28, 28, 1]    W1[28*28, 200]    b1[200]     Y1[n_batch, 200]      <sigmoid>
+layer 2:    X2=Y1=[n_batch, 200]      W1[200, 50]       b1[50]      Y2[n_batch, 50]       <sigmoid>
+layer 3:    X3=Y2=[n_batch, 50]       W1[50, 20]        b1[20]      Y3[n_batch, 20]       <sigmoid>
+layer 4:    X4=Y3=[n_batch, 20]       W1[20, 10]        b1[10]      Y4[n_batch, 10]       <softmax>
+----------------------------------------------------------------------------------------------------
+
+The final test accuracy of this model reaches to 97%.
 
 '''
 
@@ -118,11 +129,4 @@ if __name__ == '__main__':
     for i in range(2001):
        training(i)
     print 'The end.'
-
-
-
-
-
-
-
 
