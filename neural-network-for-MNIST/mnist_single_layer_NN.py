@@ -22,7 +22,7 @@ and train a single layer neural network that recognises handwritten digits of MN
 
 * The data are loaded with the official tensorflow MNIST loader .
 
-* The gradient descent method is applied to train the weight theta.
+* The gradient descent method is applied to train the weights {Wi} and the biases {bi}.
 
 * The model is trained each time with 100 images in the minibatch.
 
@@ -34,7 +34,6 @@ The final test accuracy of this model reaches to 92%.
 
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
-
 
 # assignment of coefficient
 learning_rate = 0.005   # learning rate for gradient descent method
@@ -97,6 +96,7 @@ def training(i):
     sess.run(gradient_descent, feed_dict={X: X_batch, Y_target: Y_batch})
 
 
-for i in range(2001):
-    training(i)
-print 'The end.'
+if __name__ == '__main__':
+    for i in range(2001):
+        training(i)
+    print 'The end.'
