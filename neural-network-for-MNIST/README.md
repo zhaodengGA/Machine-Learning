@@ -1,5 +1,5 @@
 #                    Neural Network for MNIST  
-<br><br>
+<br>
 	This code is capable to recognize the handwritten digits images. Three approaches have been listed here. They are single layer Neural Network, multiple layer Neural Network and Convolutional Neural Network. The corresponding recognition accuracy of these models reaches to 92%, 97%, 99% respectively. It shows the advance algorithm has better performance but more expensive. <br><br>
 	This is a rewritten version of MNIST of Google Developers Codelabs for learning purposes. Here it shows how to build and train a Neural Network which recognizes handwritten digits of MNIST dataset which has a collection of 60,000 labeled digits. MNIST dataset could be downloaded at: http://yann.lecun.com/exdb/mnist/  <br><br>
 
