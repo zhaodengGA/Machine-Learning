@@ -11,7 +11,7 @@
             ** MNIST four Layers Neural Network **
 
 This code is a rewritten version of MNIST of Google Developers Codelabs for learning purposes. Here it shows how to build
-and train a four layers neural network that recognises handwritten digits of MNIST dataset which has a collection of 60,000
+and train a four layers neural network that recognizes handwritten digits of MNIST dataset which has a collection of 60,000
 labeled digits. MNIST dataset could be downloaded at: http://yann.lecun.com/exdb/mnist/
 
 * This is a four layers Neural Network.
