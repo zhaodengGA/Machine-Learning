@@ -11,7 +11,7 @@
             ** MNIST Single Layer Neural Network **
 
 This code is a rewritten version of Google Developers Codelabs for learning purposes. This code shows how to build
-and train a single layer neural network that recognises handwritten digits of MNIST dataset which has a collection of
+and train a single layer neural network that recognizes handwritten digits of MNIST dataset which has a collection of
 60,000 labeled digits. MNIST dataset could be downloaded at: http://yann.lecun.com/exdb/mnist/
 
 * Tensorflow is applied to implement the algorithm.
