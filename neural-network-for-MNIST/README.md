@@ -11,7 +11,7 @@ Tensorflow is applied to implement the algorithm. The data are loaded with the o
 * The structure of the single layer neural network is:<br>
 \-----------------------------------------------------<br>
 input:   X1[n_batch, 28, 28, 1]    
-layer 1: (10)  W1[28*28, 10]        b1[10]         Y1=[n_batch, 10]         <softmax>
+layer 1: (10)  W1[28*28, 10]        b1[10]         Y1=[n_batch, 10]         <softmax><br>
 \-----------------------------------------------------<br>
 
 
