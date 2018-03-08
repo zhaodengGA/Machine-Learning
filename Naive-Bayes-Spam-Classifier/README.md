@@ -42,5 +42,5 @@ Note that:
         people usual do in order to avoid the memory underflow error.
         
 Divide the data to 10 parts randomly, and each time make one part to the testing set and the remains to 
-the training set. The final result is the average of these 10 testings. The average spam classifier error 
+the training set. The final result is the average of these 10 tests. The average spam classifier error 
 rate reaches to 1.4%.
