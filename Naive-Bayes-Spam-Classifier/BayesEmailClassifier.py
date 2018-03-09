@@ -40,15 +40,15 @@ Note that:
         which referred to eq.(7.19) and (7.20) of 'Zhou Zhihua, Machine Leaning'. The '1' in the
         denominator helps to avoid the error caused by multiplying zero. This is a reasonable assumption
         since it is like adding all the words of vocabulary to both spam and ham category once in advance,
-        the point is that the probability for this behaviour is distributed equally for each word.
+        the point is that the probability for this behavior is distributed equally for each word.
 
-        HERE IS SOMETHING NEW I FIND. By changing the '1' in eq.(4) to '0.02', the final result of
+        HERE IS SOMETHING NEW. By changing the '1' in eq.(4) to '0.02', the final result of
         spam classifier error rate decrease 40% from 0.023 to 0.014. The reason is that when we add all
         the words of vocabulary to both spam and ham category, the weight of these non-exist words are
         at the same amplitude level of the real words. In order to lower the extra impact from these
         non-exist words, I change the '1' to '0.02' so as to decrease their weight 50 times. Note that
         this method will be much more effective with less data. Besides, you can do the saturation test
-        to find the best weight.
+        to find the best coefficient.
 
     * Since P(Wi|S) normally is a very small number, I take a Logarithmic operation to this formula as
         people usual do in order to avoid the memory underflow error.
