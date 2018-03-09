@@ -35,8 +35,9 @@ Note that:
         spam classifier error rate decrease 40% from 0.023 to 0.014. The reason is that when we add all
         the words of vocabulary to both spam and ham category, the weight of these non-exist words are
         at the same amplitude level of the real words. In order to lower the extra impact from these
-        non-exist words, their weight has been dropped down 50 times. This method will be much more
-        effective with less data set. Besides, you can do the saturation test to find the best weight.
+        non-exist words, I change the '1' to '0.02' so as to decrease their weight 50 times. Note that
+        this method will be much more effective with less data. Besides, you can do the saturation test
+        to find the best weight.
 
     * Since P(Wi|S) normally is a very small number, I take a Logarithmic operation to this formula as
         people usual do in order to avoid the memory underflow error.
