@@ -15,7 +15,7 @@ import numpy as np
 
 def testing(testEmailsin, testCategoryin, P_Wi_Sin, P_Wi_Hin, P_Sin, vocabularyin):
     num = len(testEmailsin)
-    errCount = 0.
+    Count = 0.
     for i in range(0, num):
         WordCount = np.zeros(len(vocabularyin))
         P_S_W = 0.
@@ -40,7 +40,7 @@ def testing(testEmailsin, testCategoryin, P_Wi_Sin, P_Wi_Hin, P_Sin, vocabularyi
             whetherSpam = False
 
         if whetherSpam == testCategoryin[i]:
-            errCount += 1
-    errRate = 1. - errCount / float(num)
+            Count += 1
+    errRate = 1. - Count / float(num)
     return errRate
 
