@@ -7,7 +7,7 @@
 #
 # File name: Training.py
 #
-# The purpose of this file is to train the model to obtain the prior probability and conditional probability
+# The purpose of this file is to get the prior probability and conditional probability by training the model 
 
 import numpy as np
 import Testing as test
