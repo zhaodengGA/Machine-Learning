@@ -34,9 +34,9 @@ labeled digits. MNIST dataset could be downloaded at: http://yann.lecun.com/exdb
 # The structure of the neural network is:
 ----------------------------------------------------------------------------------------------------
 layer 1:    X1[n_batch, 28, 28, 1]    W1[28*28, 200]    b1[200]     Y1[n_batch, 200]      <sigmoid>
-layer 2:    X2=Y1=[n_batch, 200]      W1[200, 50]       b1[50]      Y2[n_batch, 50]       <sigmoid>
-layer 3:    X3=Y2=[n_batch, 50]       W1[50, 20]        b1[20]      Y3[n_batch, 20]       <sigmoid>
-layer 4:    X4=Y3=[n_batch, 20]       W1[20, 10]        b1[10]      Y4[n_batch, 10]       <softmax>
+layer 2:    X2=Y1=[n_batch, 200]      W2[200, 50]       b2[50]      Y2[n_batch, 50]       <sigmoid>
+layer 3:    X3=Y2=[n_batch, 50]       W3[50, 20]        b3[20]      Y3[n_batch, 20]       <sigmoid>
+layer 4:    X4=Y3=[n_batch, 20]       W4[20, 10]        b4[10]      Y4[n_batch, 10]       <softmax>
 ----------------------------------------------------------------------------------------------------
 
 The final test accuracy of this model reaches to 97%.
