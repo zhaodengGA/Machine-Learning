@@ -35,9 +35,9 @@ collection of 60,000 labeled digits. MNIST dataset could be downloaded at: http:
 # The structure of the neural network is:
 ------------------------------------------------------------------------------------------------------------------
 layer 1:    X1[n_batch, 28, 28, 1]       W1[6, 6, 1, 4]     b1[4]    Y1[n_batch, 28, 28, 4]   stride=1   <CNN>
-layer 2:    X2=Y1=[n_batch, 28, 28, 4]   W1[6, 6, 4, 10]    b1[10]   Y2[n_batch, 14, 14, 10]  stride=2   <CNN>
-layer 3:    X3=Y2=[n_batch, 14*14*10]    W1[14*14*10, 200]  b1[200]  Y3[n_batch, 200]                    <Relu>
-layer 4:    X4=Y3=[n_batch, 200]         W1[200, 10]        b1[10]   Y4[n_batch, 10]                     <softmax>
+layer 2:    X2=Y1=[n_batch, 28, 28, 4]   W2[6, 6, 4, 10]    b2[10]   Y2[n_batch, 14, 14, 10]  stride=2   <CNN>
+layer 3:    X3=Y2=[n_batch, 14*14*10]    W3[14*14*10,200]   b3[200]  Y3[n_batch, 200]                    <Relu>
+layer 4:    X4=Y3=[n_batch, 200]         W4[200, 10]        b4[10]   Y4[n_batch, 10]                     <softmax>
 ------------------------------------------------------------------------------------------------------------------
 
 The final test accuracy of this model reaches to 99%.
