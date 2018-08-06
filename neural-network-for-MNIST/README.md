@@ -8,25 +8,25 @@ Tensorflow is applied to implement the algorithm. The data are loaded with the o
 	
 	
 
-* The structure of the single layer neural network is:<br>
-\-----------------------------------------------------<br>
+## The structure of the single layer neural network is:<br>
+----------------------------------------------------------<br>
 input: 　X1[n_batch, 28, 28, 1]    <br>
 layer 1: (10)  W1[28*28, 10]        b1[10]         Y1=[n_batch, 10]         <softmax><br>
-\-----------------------------------------------------<br>
+----------------------------------------------------------<br>
 
 
-* The structure of the four layers neural network is:<br>
-\-----------------------------------------------------<br>
+## The structure of the four layers neural network is:<br>
+--------------------------------------------------------------------------------------------------<br>
 layer 1: (200)    　X1[n_batch, 28, 28, 1]    　W1[28*28, 200]    b1[200]     　Y1[n_batch, 200]      <sigmoid><br>
 layer 2: (50)    　　X2=Y1=[n_batch, 200]      W2[200, 50]       b2[50]      Y2[n_batch, 50]       <sigmoid><br>
 layer 3: (20)    　X3=Y2=[n_batch, 50]       W3[50, 20]        　b3[20]      Y3[n_batch, 20]       <sigmoid><br>
 layer 4: (10)     　X4=Y3=[n_batch, 20]       W4[20, 10]        　b4[10]      Y4[n_batch, 10]       <softmax><br>
-\-----------------------------------------------------<br>
-* The structure of the four layers convolutional neural network is:<br>
-\-----------------------------------------------------<br>
+--------------------------------------------------------------------------------------------------<br>
+## The structure of the four layers convolutional neural network is:<br>
+-------------------------------------------------------------------------------------------------------<br>
 	layer 1:    X1[n_batch, 28, 28, 1]       　　W1[6, 6, 1, 4]     　b1[4]    　Y1[n_batch, 28, 28, 4]   　stride=1   　<CNN><br>
 	layer 2:    X2=Y1=[n_batch, 28, 28, 4]   　W2[6, 6, 4, 10]    　b2[10]   　Y2[n_batch, 14, 14, 10]  　stride=2   　<CNN><br>
 	layer 3:    X3=Y2=[n_batch, 14*14*10]    　W3[14*14*10, 200]  　b3[200]  　Y3[n_batch, 200]                    　　<Relu><br>
 	layer 4:    X4=Y3=[n_batch, 200]         　W4[200, 10]        　　b4[10]   　Y4[n_batch, 10]                     　　<softmax><br>
-\-----------------------------------------------------<br>
+-------------------------------------------------------------------------------------------------------<br>
 	
